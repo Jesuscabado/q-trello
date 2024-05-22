@@ -9,7 +9,7 @@ import { isAuthenticated,isAdmin } from "../middlewares/authMiddleware.js";
 const router  =  Router();
 
 router.get("/",(req,res)=>{
-    res.json({data:"hello api"});
+    res.json({data:"hello apiTrello"});
 })
 router.use("/users",isAdmin,userRouter);
 router.use("/projects",isAuthenticated,projectRouter);
